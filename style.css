@@ -1,0 +1,29 @@
+h2 {
+
+text-align:center;
+}
+
+.navbar {
+	display:Block;
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: grey;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.navbar a {
+    padding: 10px 10px 10px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+}
+
+.navbar a:hover {
+    color: black;
+}
