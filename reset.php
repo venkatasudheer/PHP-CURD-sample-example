@@ -26,13 +26,13 @@ $mail = new PHPMailer(true);
   $mail->SMTPAuth   = TRUE;
   $mail->SMTPSecure = "tls";
   $mail->Port       = 587;
-  $mail->Host       = "smtp.live.com";
-  $mail->Username   = "venkatasudheer.98@outlook.com";
-  $mail->Password   = "Venkatasudheer98";
+  $mail->Host       = "smtp.live.com"; // outlook SMTP SERVER if you want for the gmail SMTP go for smtp.gmail.com
+  $mail->Username   = <YOUR DOMAIN MAIL ID>;
+  $mail->Password   = <YOUR PASSWORD>;
   $mail->IsHTML(true);
   $mail->AddAddress($_POST['email']);
-  $mail->SetFrom("venkatasudheer.98@outlook.com", "Venkatasudheer");
-  $mail->AddReplyTo("venkatasudheer.98@outlook.com", "Venkatasudheer");
+  $mail->SetFrom(<YOUR DOMAIN MAIL ID>, <SET NAME>);
+  $mail->AddReplyTo(<YOUR DOMAIN MAIL ID>,<SET NAME>);
   $mail->Subject = "Venkata sudheer PHP CURD Example";
   $content = "To reset your  password click here http://sudheer.com/resset.php?key=".$token."";
   $mail->MsgHTML($content); 
